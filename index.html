@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML CHEATSHEET">
+  <meta name="author" content="Rodrigo Bonzerr Lopez">
+  <title>HOMEPAGE - HTML CHEATSHEET TEMPLATE</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      background-color: #fff;
+      font-family: 'Lato', sans-serif;
+    }
+
+    h2{
+      font-size: 2.5rem;
+    }
+
+    /*************************************** HEADING STYLING SECTION ********************************************/
+    .header {
+      height: 100vh;
+      /* background-color: palegoldenrod; */
+      background-image: url("pch-vector.jpg");
+      background-size: cover;
+
+    }
+
+
+    .nav__list {
+      float: left;
+      padding: 2% 2%;
+      list-style-type: none;
+    }
+
+    .nav__list a {
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .header__heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      color: #fff;
+      /* background-color: orangered; */
+      font-size: 5rem;
+      text-shadow: 5px 5px 5px black;
+    }
+
+    /*************************************** MAIN STYLING SECTION ************************************************/
+
+    /*************************************** ABOUT STYLING SECTION ***********************************************/
+    .about {
+      height: 100vh;
+      /* background-color: pink; */
+      background-image:url("pch-vector-2.jpg");
+      background-position: 100% -20%;
+      background-size:cover;
+      text-align:center;
+      padding:5rem;
+      
+    }
+
+
+    .about__img {
+      height: 15rem;
+      width: 15rem;
+      border-radius:50%;
+      margin-top:2rem;
+      float:right;
+    }
+
+
+
+    /* p {
+      background-color:orangered;
+    } */
+
+    /*************************************** BLOGPOST STYLING SECTION *******************************************/
+    .blogPost {
+      height: 100vh;
+      /* background-color: green; */
+      background-image: url("J-comp-hacker-with-laptop-golden-credit-card.jpg");
+      background-size: cover;
+      text-align:left;
+      font-size:1rem;
+      color:#fff;
+      padding:2rem;
+    }
+
+    
+    aside {
+      float: right;
+      padding: 2rem;
+    }
+
+    aside ul li {
+      padding: 1rem;
+    }
+
+
+    .blogPost__img--1{
+      float:left;
+      margin-right: 2rem;
+      border-radius:50%;
+      width:100px;
+      height:100px;
+    }
+
+
+    
+    .blogPost__img--2{
+      float:left;
+      margin-right: 2rem;
+      border-radius:50%;
+      width:100px;
+      height:100px;
+    }
+
+    blockquote{
+      display:inline-block;
+      width: 60%;
+      padding: 0% 3%;
+    }
+
+    .blogPost__h3--1{
+      padding: 2% 2% 2% 0%;
+    }
+
+    .blogPost__h3--2{
+      padding: 0% 2% 2% 0%;
+    }
+
+    hr {
+      width:56%;
+      color: #fff;
+    }
+
+    .blogPost a{
+      margin-left:3%;
+      text-decoration: none;
+      color: red;
+    }
+
+  
+    /*************************************** TABLE STYLING SECTION **********************************************/
+    .table {
+      height: 80vh;
+      background-color: #fff;
+      padding-left:2rem;
+    }
+
+    .table__heading{
+      text-align:center;
+      margin: 2rem;
+    }
+
+    td,
+    th{
+      padding:1rem;
+      margin: 5px;
+      border:1px solid #dddddd;
+    }
+
+    tr:nth-child(even){
+      background-color: #dddddd;
+    }
+    /*************************************** FORM STYLING SECTION ***********************************************/
+    .form {
+      height: 100vh;
+
+      /* background-color: yellow; */
+      padding-left: 5rem;
+      background-image: url("creative-flat-lay-photo-workspace-desk.jpg");
+      background-size:cover;
+    }
+
+
+    .form__heading{
+      border-bottom: 5px solid black;
+      width: 15%;
+      padding-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .form__label--name{
+      padding-right:27px;
+      font-weight: 700;
+    }
+
+    .form__label--email{
+      padding-right: 30px;
+      font-weight: 700;
+    }
+
+    .form__label--birthday{
+      padding-right: 10px;
+      font-weight: 700;
+    }
+
+    .form__label--comment{
+      font-weight: 700;
+    }
+
+    .form__label--gender{
+      font-weight: 700;
+    }
+
+    .form__submit{
+      padding: .5rem 2rem;
+      text-align:center;
+    }
+
+
+    /*************************************** FOOTER STYLING SECTION *********************************************/
+    .footer {
+      height: 25vh;
+      background-color: #000;
+      color: #fff;
+      padding:2rem;
+    }
+
+    .footer__contact{
+      float:left;
+      margin-right: 15%;
+    }
+
+    .footer__contact ul li{
+      list-style-type:none;
+    }
+
+    .footer .footer__credits a{
+      text-decoration: none;
+      color:#fff;
+    }
+    
+    .footer p{
+      font-size: .8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!--*************************************** HEADING SECTION ************************************************ -->
+  <header>
+    <div class="header">
+      <div class="header__nav">
+        <nav>
+          <ul>
+            <li class="nav__list"><a href="#">Home</a> </li>
+            <li class="nav__list"><a href="#about">About</a> </li>
+            <li class="nav__list"><a href="#footer">Contact</a> </li>
+            <li class="nav__list"><a href="https://twitter.com/" target="_blank">Twitter</a> </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="header__heading">
+        <h1>HTML CHEAT SHEET TEMPLATE</h1>
+        <!-- <h2>HEADING TWO</h2>
+        <h3>HEADING THREE</h3>
+        <h4>HEADING FOUR</h4>
+        <h5>HEADING FIVE</h5>
+        <h6>HEADING SIX</h6> -->
+      </div>
+
+      <!-- <p>HELLO WORLD!!</p> -->
+
+    </div>
+  </header>
+  <!--*************************************** MAIN SECTION ************************************************  -->
+  <main>
+    <!--*************************************** ABOUT SECTION ************************************************  -->
+    <section>
+      <div class="about" id="about">
+        <h2>About Page</h2>
+        <p>I am <strong>RODRIGO BONZERR S. LOPEZ</strong> and I am a graduate of Bachelor of Commerce Major in Computer
+          Science and my
+          hobbies are guitar playing, video games, martial arts, mountaineering, and anything interesting to learn. This
+          is an <b>HTML cheat sheet template</b> that is a result of the <strong><em>HTML crash course</em></strong>
+          that I've built for my youtube
+          channel. You can customize this and use it as a guide for building your own project.</p>
+
+        <img class="about__img" src="02-rodprogramdev-300PPi-cidratio.jpg"
+          alt="A picture of our author Rodrigo Bonzerr S. Lopez">
+
+
+      </div>
+    </section>
+    <!--*************************************** BLOGPOST SECTION *********************************************  -->
+    <section>
+      <div class="blogPost">
+
+        <h2>Blogpost Articles</h2>
+        <aside>
+          <h3>Tutorial Categories</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>CYBERSECURITY</li>
+          </ul>
+        </aside>
+
+        <article>
+          <h3 class="blogPost__h3--1">Computer Talk 101</h3>
+          <img class="blogPost__img--1"
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1"
+            alt="Computer science image" >
+        </article>
+        <blockquote cite="https://www.rodprogramdev.wordpress.com">
+          Computer literacy nowadays is an important skill to be acquired by any individual.
+          Especially due to the fact that most common tasks for different jobs in any industry
+          would require tasks that can be achieved through the use of a computer. From sending a
+          simple email to creating powerpoint presentations for a captured audience.
+
+        </blockquote><br>
+        <a href="#">Continue Reading</a>
+        <br><br><br><br><br>
+        <hr>
+        <br><br><br><br><br><br>
+        <article>
+          <h3 class="blogPost__h3--2">CCNA - Internet of Things</h3>
+          <img class="blogPost__img--2"
+            src="
+          https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1"
+            alt="Networking cable rj45 images">
+        </article>
+        <blockquote cite="https://www.rodprogramdev.wordpress.com">
+
+          Hi! I'm Rodrigo Lopez and I would like to take the <abbr title="Cisco Certified Network Associate">CCNA</abbr> certification that is why
+          I have committed to study networking on a daily basis for one hour. I will be applying
+          a 100 day challenge of studying different Cisco Certified Network Associate concepts
+          and I would like to document my journey through this blog.
+
+        </blockquote><br>
+        <a href="#">Continue Reading</a>
+
+      </div>
+    </section>
+    <!--*************************************** TABLE SECTION ************************************************  -->
+    <section>
+      <div class="table">
+        <h2 class="table__heading">Table Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Goal</th>
+              <th>Target Start Date</th>
+              <th>Target End Date</th>
+              <th>Reminders</th>
+              <th>Remarks</th>
+
+            </tr>
+        
+          </thead>
+          <tbody>
+            <tr>
+              <td>Travel to Japan buy manga</td>
+              <td>November 9, 2021</td>
+              <td>November 30,2021</td>
+              <td>Go get an autograph from Eichiro Oda if possible </td>
+              <td>Big Roronoa Zorro Fan Here </td>
+          </tr>
+            <tr>
+              <td>Travel to U.S.</td>
+              <td>November 9, 2021</td>
+              <td>November 30, 2021</td>
+              <td>Go visit my sisters house</td>
+              <td>Eat apples all day and play</td>
+
+            </tr>
+            <tr>
+              <td>Upskilling through certifications</td>
+              <td>2022</td>
+              <td>2024</td>
+              <td>Improve my skills through daily practice and studying</td>
+              <td>Practice is your way to mastery!!!</td>
+            </tr>
+            <tr>
+              <td>Study Japanese Language</td>
+              <td>2022</td>
+              <td>2024</td>
+                        <td>Improve my skills through daily practice and studying</td>
+                        <td>Anatano namae wa nan desu?</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!--*************************************** FORM SECTION ************************************************  -->
+    <section>
+      <div class="form">
+        <h2 class="form__heading">SUBSCRIBE</h2>
+        <form action="mailto:rodprogramdev@gmail.com" method="POST">
+          <label class="form__label--name" for="customerName">Name: </label>
+          <input type="text" name="customerName" id="customerName" placeholder="Enter your name here">
+          <br>
+          <br>
+          
+          <label class="form__label--email" for="email">Email: </label>
+          <input type="email" name="email" id="email" placeholder="Enter your email here">
+          <br>
+          <br>
+          <label class="form__label--birthday" for="birthday">Birthday: </label>
+          <input type="date" name="birthday" id="birthday">
+          <br>
+          <br>
+          <label class="form__label--comment" for="comment">Comment: </label><br>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          <br>
+          <br>
+          <label class="form__label--gender" for="gender">Gender: </label>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+          <br>
+          <br>
+          <input class="form__submit" type="submit" name="submit" value="submit">
+        </form>
+
+
+      </div>
+    </section>
+  </main>
+
+  <!--*************************************** FOOTER SECTION *********************************************** -->
+  <footer id="footer">
+    <div class="footer">
+      <div class="footer__contact">
+        <h3>CONTACT INFORMATION:</h3>
+        <ul>
+          <li>Facebook: Your Facebook Page</li>
+          <li>Twitter: Your Twitter Account</li>
+          <li>Instagram: Your Instagram Account</li>
+          <li>Discord: Your Discord Server</li>
+          <li>email: youremailhere@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer__credits">
+        Header <a href='https://www.freepik.com/photos/background'>Background photo created by pch.vector - www.freepik.com</a> <br>
+                About Page photo <a href='https://www.freepik.com/vectors/computer'>Computer vector created by pch.vector - www.freepik.com</a><br>
+                Blogpost<a href='https://www.freepik.com/photos/cards'> Cards photo created by jcomp - www.freepik.com</a><br>
+                Form <a href="https://www.freepik.com/photos/background">Background photo created by tirachardz - www.freepik.com</a><br>
+                <br>
+        <p>Copyright&copy;2021, Rodrigo Bonzerr S. Lopez, HTML Template. Its completely ok
+          for you to use this template. <br> A credit to the owner will be highly appreciated. 
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
